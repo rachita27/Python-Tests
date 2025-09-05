@@ -1,0 +1,7 @@
+pandas
+numpy
+#ikernel
+requests
+lxml
+bs4
+scikit-learn
