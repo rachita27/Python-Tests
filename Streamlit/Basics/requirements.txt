@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+flask
+memory_profiler
+streamlit
+openpyxl
