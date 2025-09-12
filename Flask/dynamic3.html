@@ -1,0 +1,28 @@
+ <h2> Hi {{results['Name']}}, Hope you're fine! </h2> 
+ <body> 
+
+    <h3>BASE ON THE BACKEDND RULE EVAULUATION THE CONCLUSION IS :</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in results.items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% if results['Score'] > 30 %}
+    <h2> Congratulations, You've passed the exam</h2>
+    {% else %}
+    <h2> Better luck next time, You've failed the exam!!</h2>
+    {% endif %}
+
+</body> 
+
